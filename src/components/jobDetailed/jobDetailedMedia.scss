@@ -93,9 +93,11 @@
 @media (max-width: 576px) {
     .jobDetailed{
         align-items: center;
+        width: 94%;
+        
     }
     .attached__image{
-        height: 200px;
+        width: 25vw;
     }
     .jobDetailed__descr{
         margin: 0 auto;
@@ -106,6 +108,10 @@
     .jobDetailed__intro__salary{
         width: 50%;
     }
+    .jobDetailed__intro__text{
+        width: 100%;
+    }
+    
 }
 @media (max-width: 375px) {
     .jobDetailed__intro__text{
