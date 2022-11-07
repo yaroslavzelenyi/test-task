@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from "axios";
 const baseUrl = "https://api.json-generator.com/templates/ZM1r0eic3XEy/data/?access_token=wm3gg940gy0xek1ld98uaizhz83c6rh2sir9f9fu";
 const initialState = {
-    jobs: [],
+    jobs: {},
     currentPage: 1,
     jobsLoadingStatus: 'idle',
     job: {}
@@ -21,9 +21,8 @@ export const fetchJobs = createAsyncThunk(
     'jobs/fetchJobs',
     async () => {
         const response = await axios.get(baseUrl);
-        const dataObj = convertArrayToObject(response.data, 'id');
-        return dataObj;
-        // return response.data;
+        return convertArrayToObject(response.data, 'id');
+        
     }  
 );
 

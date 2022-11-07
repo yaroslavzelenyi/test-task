@@ -1,12 +1,13 @@
+
 import "./jobsListItem.scss";
 import location from '../../assets/location.svg';
 import rate from '../../assets/rate.svg';
 import save from '../../assets/save.svg';
 import { useNavigate } from "react-router-dom";
-const JobsListItem  = ({title, address, pictures, benefits, createdAt,id})=>{
+const JobsListItem  = ({title,name, address, pictures, benefits, createdAt,id})=>{
     const navigate = useNavigate();
     return(
-        <li onClick={()=>navigate(`/?id=${id}`)}
+        <li onClick={()=>navigate(`/vacancy?id=${id}`)}
         className="job">
             
             <img src={pictures[0]} className="round__circle" alt="" />

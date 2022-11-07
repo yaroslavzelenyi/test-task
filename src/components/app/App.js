@@ -5,8 +5,8 @@ import JobDetailed from '../jobDetailed/JobDetailed';
 function App() {
   return (
     <div className="App">
-      {/* <JobList/> */}
-      <JobDetailed/>
+      <JobList/>
+      
     </div>
   );
 }

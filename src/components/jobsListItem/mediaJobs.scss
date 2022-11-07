@@ -1,4 +1,4 @@
-@media (min-width: 1400px) { 
+@media (max-width: 1400px) { 
     .job{
         width: 1200px;
         &__description{
@@ -8,7 +8,10 @@
 
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
+    ul{
+        padding: 0;
+    }
     .job{
         width: 1000px;
         &__description{
@@ -17,7 +20,7 @@
     }
  }
 
-@media (min-width: 992px) { 
+@media (max-width: 992px) { 
     .job{
         width: 900px;
         background-color: #EFF0F5;
@@ -38,7 +41,7 @@
     }
 
  }
- @media (min-width: 768px) { 
+ @media (max-width: 768px) { 
     ul{
         padding: 0;
     }
@@ -81,7 +84,7 @@
     }
  }
 
- @media (min-width: 576px) {
+ @media (max-width: 576px) {
     ul{
         padding: 0;
     }
@@ -125,5 +128,15 @@
                 
             }
         }
+    }
+  }
+  @media (max-width: 576px) {
+
+    .job{
+        width: 95%;
+        height: 250px;
+    }
+    .job__description {
+        width: 70%;
     }
   }

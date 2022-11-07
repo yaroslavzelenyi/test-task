@@ -1,0 +1,124 @@
+
+@media (max-width: 1400px) { 
+   
+    .jobDetailed__return{
+        // margin-left: 71px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .jobDetailed__map{
+        width: 280px;
+        height: 300px;
+        border-radius: 8px;
+        &__info{
+            align-items: center;
+        }
+    }
+    .jobDetailed__return{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .jobDetailed__wrapper{
+        width: 80%;
+
+    } 
+    .jobDetailed__descr {
+        width: 100%;
+    }
+    .jobDetailed__wrapper{
+        flex-direction: column;
+
+    }
+    .jobDetailed__map{
+        position: relative;
+        margin-bottom: 30px;
+        // width: 372px;
+        // height: 406px;
+    }
+    #jobDetailed__contacts{
+        display: block;
+        position: absolute;
+        top: -50px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 24px;
+        color:$main-color;
+        font-weight: 700;
+        font-size: 28px;
+        height: 34px;
+        border-bottom: 1px solid rgba(58, 69 , 98, 0.13);
+    }
+    .jobDetailed__return{
+        margin-bottom: 40px;
+        margin-left: 8%;
+    }
+}
+ @media (max-width: 768px) { 
+    .jobDetailed__descr {
+        width: 93%;
+    }
+    .jobDetailed__header{
+        flex-direction: column;
+        row-gap: 24px;
+        height: 94px;
+        border:none;
+        
+        &__title{
+            height: 47px;
+            width: 100%;
+            border-bottom: 1px solid rgba(58, 69 , 98, 0.13);
+        }
+    }
+    
+    .jobDetailed__intro{
+        flex-direction: column;
+        row-gap: 8px;
+        &__salary{
+            width: 25%;
+        }
+    }
+    #upperBtn{
+        display: none;
+    }
+    .apply{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .jobDetailed{
+        align-items: center;
+    }
+    // .jobDetailed__wrapper {
+    //     width: 100%;
+        
+    // }
+    .attached__image{
+        height: 200px;
+    }
+    .jobDetailed__descr{
+        margin: 0 auto;
+    }
+    .jobDetailed__additional__type {
+        align-items: flex-start;
+    }
+    .jobDetailed__intro__salary{
+        width: 50%;
+    }
+}
+@media (max-width: 375px) {
+    .jobDetailed__intro__text{
+        width: 100%;
+    }
+    .jobDetailed__attached__blocks{
+        flex-direction: column;
+    }
+    .attached__image{
+        width: 40vw;
+    }
+}

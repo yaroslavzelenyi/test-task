@@ -16,7 +16,7 @@ const JobList = ()=> {
     const dispatch = useDispatch();
     const jobsData = Object.values(jobs);
    
-    const jobsPerPage = 4;
+    const jobsPerPage = 8;
     const pageCount = jobsData.length / jobsPerPage;
     const currentEnd = currentPage * jobsPerPage;
     const currentStart = (currentPage - 1) * jobsPerPage ; 
@@ -50,19 +50,14 @@ const JobList = ()=> {
                 </CSSTransition>
             )
         }
-        const someText =()=>{
-            console.log('some');
-        }
+
         return arr.slice(currentStart, currentEnd)    
             .map(({id, ...props}) => 
-
                 (
                     <CSSTransition 
                         key={id}
                         timeout={500}
-                        onClick={someText}
                         classNames="job">
-                        
                         <JobsListItem 
                             id={id}
                             {...props} />
@@ -72,7 +67,6 @@ const JobList = ()=> {
                 
             )
     }
-    console.log(jobsData);
     const elements = renderJobList(Object.values(jobs));
 
 

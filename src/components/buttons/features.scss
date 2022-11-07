@@ -1,6 +1,6 @@
 .features{
     border-radius: 8px;
-    width: 222px;
+    width: 12vw;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -16,4 +16,10 @@
     background-color: rgba(255, 207, 0, 0.15);
     border: 1px solid #FFCF00;
     color: #988B49;
+}
+@media (max-width: 576px) {
+    .features {
+        width: 22vw;
+        text-align: center;
+    }
 }
